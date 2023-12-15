@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1296842B2CF83F00A846DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296832B2CF83F00A846DA /* ContentView.swift */; };
+		FA1296882B2CF83F00A846DA /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296872B2CF83F00A846DA /* ViewControllerRepresentable.swift */; };
+		FA12968B2B2CF83F00A846DA /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = FA12968A2B2CF83F00A846DA /* Synth.aif */; };
+		FA12968D2B2CF83F00A846DA /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12968C2B2CF83F00A846DA /* SimplePlayEngine.swift */; };
+		FA12968F2B2CF83F00A846DA /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12968E2B2CF83F00A846DA /* TypeAliases.swift */; };
+		FA1296922B2CF83F00A846DA /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296912B2CF83F00A846DA /* StringHelpers.swift */; };
+		FA1296952B2CF83F00A846DA /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296942B2CF83F00A846DA /* MIDIManager.swift */; };
+		FA1296982B2CF83F00A846DA /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296972B2CF83F00A846DA /* AudioUnitHostModel.swift */; };
+		FA12969A2B2CF83F00A846DA /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296992B2CF83F00A846DA /* AudioUnitViewModel.swift */; };
+		FA12969C2B2CF83F00A846DA /* MIDIsplainKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12969B2B2CF83F00A846DA /* MIDIsplainKitApp.swift */; };
+		FA12969E2B2CF84100A846DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA12969D2B2CF84100A846DA /* Assets.xcassets */; };
+		FA1296A12B2CF84100A846DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1296A02B2CF84100A846DA /* Preview Assets.xcassets */; };
+		FA1296AC2B2CF84100A846DA /* MIDIsplainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296AB2B2CF84100A846DA /* MIDIsplainKitTests.swift */; };
+		FA1296B62B2CF84100A846DA /* MIDIsplainKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296B52B2CF84100A846DA /* MIDIsplainKitUITests.swift */; };
+		FA1296B82B2CF84100A846DA /* MIDIsplainKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296B72B2CF84100A846DA /* MIDIsplainKitUITestsLaunchTests.swift */; };
+		FA1296BE2B2CF84100A846DA /* MIDIsplainKitExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FA1296BD2B2CF84100A846DA /* MIDIsplainKitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA1296C32B2CF84100A846DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA1296C22B2CF84100A846DA /* README.md */; };
+		FA1296C82B2CF84100A846DA /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296C72B2CF84100A846DA /* ParameterSpecBase.swift */; };
+		FA1296CB2B2CF84100A846DA /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296CA2B2CF84100A846DA /* CrossPlatform.swift */; };
+		FA1296CD2B2CF84100A846DA /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296CC2B2CF84100A846DA /* String+Utils.swift */; };
+		FA1296D12B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA1296D02B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.mm */; };
+		FA1296D42B2CF84100A846DA /* MIDIsplainKitExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = FA1296D32B2CF84100A846DA /* MIDIsplainKitExtensionAUProcessHelper.hpp */; };
+		FA1296D82B2CF84100A846DA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296D72B2CF84100A846DA /* Parameters.swift */; };
+		FA1296DB2B2CF84100A846DA /* MIDIsplainKitExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = FA1296DA2B2CF84100A846DA /* MIDIsplainKitExtensionDSPKernel.hpp */; };
+		FA1296DE2B2CF84100A846DA /* MIDIsplainKitExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296DD2B2CF84100A846DA /* MIDIsplainKitExtensionMainView.swift */; };
+		FA1296E02B2CF84100A846DA /* MomentaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296DF2B2CF84100A846DA /* MomentaryButton.swift */; };
+		FA1296E22B2CF84100A846DA /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296E12B2CF84100A846DA /* ParameterSlider.swift */; };
+		FA1296E72B2CF84100A846DA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1296E52B2CF84100A846DA /* MainInterface.storyboard */; };
+		FA1296E92B2CF84100A846DA /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296E82B2CF84100A846DA /* ObservableAUParameter.swift */; };
+		FA1296EB2B2CF84100A846DA /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1296EA2B2CF84100A846DA /* AudioUnitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA1296A82B2CF84100A846DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1296782B2CF83F00A846DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA12967F2B2CF83F00A846DA;
+			remoteInfo = MIDIsplainKit;
+		};
+		FA1296B22B2CF84100A846DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1296782B2CF83F00A846DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA12967F2B2CF83F00A846DA;
+			remoteInfo = MIDIsplainKit;
+		};
+		FA1296BF2B2CF84100A846DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1296782B2CF83F00A846DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1296BC2B2CF84100A846DA;
+			remoteInfo = MIDIsplainKitExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA1296F22B2CF84100A846DA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA1296BE2B2CF84100A846DA /* MIDIsplainKitExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA1296802B2CF83F00A846DA /* MIDIsplainKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIDIsplainKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1296832B2CF83F00A846DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA1296872B2CF83F00A846DA /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		FA12968A2B2CF83F00A846DA /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		FA12968C2B2CF83F00A846DA /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		FA12968E2B2CF83F00A846DA /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		FA1296912B2CF83F00A846DA /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		FA1296942B2CF83F00A846DA /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		FA1296972B2CF83F00A846DA /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		FA1296992B2CF83F00A846DA /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		FA12969B2B2CF83F00A846DA /* MIDIsplainKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIsplainKitApp.swift; sourceTree = "<group>"; };
+		FA12969D2B2CF84100A846DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA1296A02B2CF84100A846DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA1296A22B2CF84100A846DA /* MIDIsplainKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MIDIsplainKit.entitlements; sourceTree = "<group>"; };
+		FA1296A72B2CF84100A846DA /* MIDIsplainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIDIsplainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1296AB2B2CF84100A846DA /* MIDIsplainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIsplainKitTests.swift; sourceTree = "<group>"; };
+		FA1296B12B2CF84100A846DA /* MIDIsplainKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIDIsplainKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1296B52B2CF84100A846DA /* MIDIsplainKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIsplainKitUITests.swift; sourceTree = "<group>"; };
+		FA1296B72B2CF84100A846DA /* MIDIsplainKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIsplainKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA1296BD2B2CF84100A846DA /* MIDIsplainKitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MIDIsplainKitExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1296C22B2CF84100A846DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA1296C52B2CF84100A846DA /* MIDIsplainKitExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MIDIsplainKitExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA1296C72B2CF84100A846DA /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		FA1296CA2B2CF84100A846DA /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		FA1296CC2B2CF84100A846DA /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		FA1296CF2B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIsplainKitExtensionAudioUnit.h; sourceTree = "<group>"; };
+		FA1296D02B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MIDIsplainKitExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		FA1296D32B2CF84100A846DA /* MIDIsplainKitExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MIDIsplainKitExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		FA1296D62B2CF84100A846DA /* MIDIsplainKitExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIsplainKitExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		FA1296D72B2CF84100A846DA /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		FA1296DA2B2CF84100A846DA /* MIDIsplainKitExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MIDIsplainKitExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		FA1296DD2B2CF84100A846DA /* MIDIsplainKitExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIsplainKitExtensionMainView.swift; sourceTree = "<group>"; };
+		FA1296DF2B2CF84100A846DA /* MomentaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentaryButton.swift; sourceTree = "<group>"; };
+		FA1296E12B2CF84100A846DA /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		FA1296E62B2CF84100A846DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		FA1296E82B2CF84100A846DA /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		FA1296EA2B2CF84100A846DA /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		FA1296EC2B2CF84100A846DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA12967D2B2CF83F00A846DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296A42B2CF84100A846DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296AE2B2CF84100A846DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296BA2B2CF84100A846DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1296772B2CF83F00A846DA = {
+			isa = PBXGroup;
+			children = (
+				FA1296822B2CF83F00A846DA /* MIDIsplainKit */,
+				FA1296AA2B2CF84100A846DA /* MIDIsplainKitTests */,
+				FA1296B42B2CF84100A846DA /* MIDIsplainKitUITests */,
+				FA1296C12B2CF84100A846DA /* MIDIsplainKitExtension */,
+				FA1296812B2CF83F00A846DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1296812B2CF83F00A846DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296802B2CF83F00A846DA /* MIDIsplainKit.app */,
+				FA1296A72B2CF84100A846DA /* MIDIsplainKitTests.xctest */,
+				FA1296B12B2CF84100A846DA /* MIDIsplainKitUITests.xctest */,
+				FA1296BD2B2CF84100A846DA /* MIDIsplainKitExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1296822B2CF83F00A846DA /* MIDIsplainKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296832B2CF83F00A846DA /* ContentView.swift */,
+				FA12969B2B2CF83F00A846DA /* MIDIsplainKitApp.swift */,
+				FA12969D2B2CF84100A846DA /* Assets.xcassets */,
+				FA1296A22B2CF84100A846DA /* MIDIsplainKit.entitlements */,
+				FA1296852B2CF83F00A846DA /* Common */,
+				FA1296962B2CF83F00A846DA /* Model */,
+				FA12969F2B2CF84100A846DA /* Preview Content */,
+			);
+			path = MIDIsplainKit;
+			sourceTree = "<group>";
+		};
+		FA1296852B2CF83F00A846DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA12968E2B2CF83F00A846DA /* TypeAliases.swift */,
+				FA1296862B2CF83F00A846DA /* UI */,
+				FA1296892B2CF83F00A846DA /* Audio */,
+				FA1296902B2CF83F00A846DA /* String */,
+				FA1296932B2CF83F00A846DA /* MIDI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA1296862B2CF83F00A846DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296872B2CF83F00A846DA /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FA1296892B2CF83F00A846DA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				FA12968A2B2CF83F00A846DA /* Synth.aif */,
+				FA12968C2B2CF83F00A846DA /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		FA1296902B2CF83F00A846DA /* String */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296912B2CF83F00A846DA /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		FA1296932B2CF83F00A846DA /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296942B2CF83F00A846DA /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		FA1296962B2CF83F00A846DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296972B2CF83F00A846DA /* AudioUnitHostModel.swift */,
+				FA1296992B2CF83F00A846DA /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA12969F2B2CF84100A846DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296A02B2CF84100A846DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA1296AA2B2CF84100A846DA /* MIDIsplainKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296AB2B2CF84100A846DA /* MIDIsplainKitTests.swift */,
+			);
+			path = MIDIsplainKitTests;
+			sourceTree = "<group>";
+		};
+		FA1296B42B2CF84100A846DA /* MIDIsplainKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296B52B2CF84100A846DA /* MIDIsplainKitUITests.swift */,
+				FA1296B72B2CF84100A846DA /* MIDIsplainKitUITestsLaunchTests.swift */,
+			);
+			path = MIDIsplainKitUITests;
+			sourceTree = "<group>";
+		};
+		FA1296C12B2CF84100A846DA /* MIDIsplainKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296C22B2CF84100A846DA /* README.md */,
+				FA1296EC2B2CF84100A846DA /* Info.plist */,
+				FA1296C42B2CF84100A846DA /* Common */,
+				FA1296D52B2CF84100A846DA /* Parameters */,
+				FA1296D92B2CF84100A846DA /* DSP */,
+				FA1296DC2B2CF84100A846DA /* UI */,
+			);
+			path = MIDIsplainKitExtension;
+			sourceTree = "<group>";
+		};
+		FA1296C42B2CF84100A846DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296C52B2CF84100A846DA /* MIDIsplainKitExtension-Bridging-Header.h */,
+				FA1296C62B2CF84100A846DA /* Parameters */,
+				FA1296C92B2CF84100A846DA /* Utility */,
+				FA1296CE2B2CF84100A846DA /* Audio Unit */,
+				FA1296D22B2CF84100A846DA /* DSP */,
+				FA1296E32B2CF84100A846DA /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA1296C62B2CF84100A846DA /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296C72B2CF84100A846DA /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		FA1296C92B2CF84100A846DA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296CA2B2CF84100A846DA /* CrossPlatform.swift */,
+				FA1296CC2B2CF84100A846DA /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FA1296CE2B2CF84100A846DA /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296CF2B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.h */,
+				FA1296D02B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		FA1296D22B2CF84100A846DA /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296D32B2CF84100A846DA /* MIDIsplainKitExtensionAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		FA1296D52B2CF84100A846DA /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296D62B2CF84100A846DA /* MIDIsplainKitExtensionParameterAddresses.h */,
+				FA1296D72B2CF84100A846DA /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		FA1296D92B2CF84100A846DA /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296DA2B2CF84100A846DA /* MIDIsplainKitExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		FA1296DC2B2CF84100A846DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296DD2B2CF84100A846DA /* MIDIsplainKitExtensionMainView.swift */,
+				FA1296DF2B2CF84100A846DA /* MomentaryButton.swift */,
+				FA1296E12B2CF84100A846DA /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FA1296E32B2CF84100A846DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296E82B2CF84100A846DA /* ObservableAUParameter.swift */,
+				FA1296EA2B2CF84100A846DA /* AudioUnitViewController.swift */,
+				FA1296E42B2CF84100A846DA /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FA1296E42B2CF84100A846DA /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FA1296E52B2CF84100A846DA /* MainInterface.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA12967F2B2CF83F00A846DA /* MIDIsplainKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1296F32B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKit" */;
+			buildPhases = (
+				FA12967C2B2CF83F00A846DA /* Sources */,
+				FA12967D2B2CF83F00A846DA /* Frameworks */,
+				FA12967E2B2CF83F00A846DA /* Resources */,
+				FA1296F22B2CF84100A846DA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1296C02B2CF84100A846DA /* PBXTargetDependency */,
+			);
+			name = MIDIsplainKit;
+			productName = MIDIsplainKit;
+			productReference = FA1296802B2CF83F00A846DA /* MIDIsplainKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA1296A62B2CF84100A846DA /* MIDIsplainKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1296F62B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKitTests" */;
+			buildPhases = (
+				FA1296A32B2CF84100A846DA /* Sources */,
+				FA1296A42B2CF84100A846DA /* Frameworks */,
+				FA1296A52B2CF84100A846DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1296A92B2CF84100A846DA /* PBXTargetDependency */,
+			);
+			name = MIDIsplainKitTests;
+			productName = MIDIsplainKitTests;
+			productReference = FA1296A72B2CF84100A846DA /* MIDIsplainKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA1296B02B2CF84100A846DA /* MIDIsplainKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1296F92B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKitUITests" */;
+			buildPhases = (
+				FA1296AD2B2CF84100A846DA /* Sources */,
+				FA1296AE2B2CF84100A846DA /* Frameworks */,
+				FA1296AF2B2CF84100A846DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1296B32B2CF84100A846DA /* PBXTargetDependency */,
+			);
+			name = MIDIsplainKitUITests;
+			productName = MIDIsplainKitUITests;
+			productReference = FA1296B12B2CF84100A846DA /* MIDIsplainKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FA1296BC2B2CF84100A846DA /* MIDIsplainKitExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1296EF2B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKitExtension" */;
+			buildPhases = (
+				FA1296B92B2CF84100A846DA /* Sources */,
+				FA1296BA2B2CF84100A846DA /* Frameworks */,
+				FA1296BB2B2CF84100A846DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIDIsplainKitExtension;
+			productName = MIDIsplainKitExtension;
+			productReference = FA1296BD2B2CF84100A846DA /* MIDIsplainKitExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1296782B2CF83F00A846DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					FA12967F2B2CF83F00A846DA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					FA1296A62B2CF84100A846DA = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = FA12967F2B2CF83F00A846DA;
+					};
+					FA1296B02B2CF84100A846DA = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = FA12967F2B2CF83F00A846DA;
+					};
+					FA1296BC2B2CF84100A846DA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = FA12967B2B2CF83F00A846DA /* Build configuration list for PBXProject "MIDIsplainKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA1296772B2CF83F00A846DA;
+			productRefGroup = FA1296812B2CF83F00A846DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA12967F2B2CF83F00A846DA /* MIDIsplainKit */,
+				FA1296A62B2CF84100A846DA /* MIDIsplainKitTests */,
+				FA1296B02B2CF84100A846DA /* MIDIsplainKitUITests */,
+				FA1296BC2B2CF84100A846DA /* MIDIsplainKitExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA12967E2B2CF83F00A846DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA12969E2B2CF84100A846DA /* Assets.xcassets in Resources */,
+				FA1296A12B2CF84100A846DA /* Preview Assets.xcassets in Resources */,
+				FA12968B2B2CF83F00A846DA /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296A52B2CF84100A846DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296AF2B2CF84100A846DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296BB2B2CF84100A846DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1296C32B2CF84100A846DA /* README.md in Resources */,
+				FA1296E72B2CF84100A846DA /* MainInterface.storyboard in Resources */,
+				FA1296D42B2CF84100A846DA /* MIDIsplainKitExtensionAUProcessHelper.hpp in Resources */,
+				FA1296DB2B2CF84100A846DA /* MIDIsplainKitExtensionDSPKernel.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA12967C2B2CF83F00A846DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1296982B2CF83F00A846DA /* AudioUnitHostModel.swift in Sources */,
+				FA12969A2B2CF83F00A846DA /* AudioUnitViewModel.swift in Sources */,
+				FA1296922B2CF83F00A846DA /* StringHelpers.swift in Sources */,
+				FA12968F2B2CF83F00A846DA /* TypeAliases.swift in Sources */,
+				FA1296952B2CF83F00A846DA /* MIDIManager.swift in Sources */,
+				FA1296842B2CF83F00A846DA /* ContentView.swift in Sources */,
+				FA1296882B2CF83F00A846DA /* ViewControllerRepresentable.swift in Sources */,
+				FA12969C2B2CF83F00A846DA /* MIDIsplainKitApp.swift in Sources */,
+				FA12968D2B2CF83F00A846DA /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296A32B2CF84100A846DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1296AC2B2CF84100A846DA /* MIDIsplainKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296AD2B2CF84100A846DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1296B62B2CF84100A846DA /* MIDIsplainKitUITests.swift in Sources */,
+				FA1296B82B2CF84100A846DA /* MIDIsplainKitUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1296B92B2CF84100A846DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1296D82B2CF84100A846DA /* Parameters.swift in Sources */,
+				FA1296C82B2CF84100A846DA /* ParameterSpecBase.swift in Sources */,
+				FA1296E02B2CF84100A846DA /* MomentaryButton.swift in Sources */,
+				FA1296E92B2CF84100A846DA /* ObservableAUParameter.swift in Sources */,
+				FA1296DE2B2CF84100A846DA /* MIDIsplainKitExtensionMainView.swift in Sources */,
+				FA1296EB2B2CF84100A846DA /* AudioUnitViewController.swift in Sources */,
+				FA1296E22B2CF84100A846DA /* ParameterSlider.swift in Sources */,
+				FA1296CB2B2CF84100A846DA /* CrossPlatform.swift in Sources */,
+				FA1296CD2B2CF84100A846DA /* String+Utils.swift in Sources */,
+				FA1296D12B2CF84100A846DA /* MIDIsplainKitExtensionAudioUnit.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA1296A92B2CF84100A846DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA12967F2B2CF83F00A846DA /* MIDIsplainKit */;
+			targetProxy = FA1296A82B2CF84100A846DA /* PBXContainerItemProxy */;
+		};
+		FA1296B32B2CF84100A846DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA12967F2B2CF83F00A846DA /* MIDIsplainKit */;
+			targetProxy = FA1296B22B2CF84100A846DA /* PBXContainerItemProxy */;
+		};
+		FA1296C02B2CF84100A846DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1296BC2B2CF84100A846DA /* MIDIsplainKitExtension */;
+			targetProxy = FA1296BF2B2CF84100A846DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA1296E52B2CF84100A846DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1296E62B2CF84100A846DA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA1296ED2B2CF84100A846DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MIDIsplainKit/MIDIsplainKit.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA1296EE2B2CF84100A846DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MIDIsplainKit/MIDIsplainKit.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1296F02B2CF84100A846DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MIDIsplainKitExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MIDIsplainKitExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKit.MIDIsplainKitExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MIDIsplainKitExtension/Common/MIDIsplainKitExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA1296F12B2CF84100A846DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MIDIsplainKitExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MIDIsplainKitExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKit.MIDIsplainKitExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MIDIsplainKitExtension/Common/MIDIsplainKitExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA1296F42B2CF84100A846DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MIDIsplainKit/Preview Content\"";
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA1296F52B2CF84100A846DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MIDIsplainKit/Preview Content\"";
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA1296F72B2CF84100A846DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIDIsplainKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MIDIsplainKit";
+			};
+			name = Debug;
+		};
+		FA1296F82B2CF84100A846DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIDIsplainKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MIDIsplainKit";
+			};
+			name = Release;
+		};
+		FA1296FA2B2CF84100A846DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MIDIsplainKit;
+			};
+			name = Debug;
+		};
+		FA1296FB2B2CF84100A846DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAKP7388H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.iethnographer.MIDIsplainKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MIDIsplainKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA12967B2B2CF83F00A846DA /* Build configuration list for PBXProject "MIDIsplainKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1296ED2B2CF84100A846DA /* Debug */,
+				FA1296EE2B2CF84100A846DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1296EF2B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1296F02B2CF84100A846DA /* Debug */,
+				FA1296F12B2CF84100A846DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1296F32B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1296F42B2CF84100A846DA /* Debug */,
+				FA1296F52B2CF84100A846DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1296F62B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1296F72B2CF84100A846DA /* Debug */,
+				FA1296F82B2CF84100A846DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1296F92B2CF84100A846DA /* Build configuration list for PBXNativeTarget "MIDIsplainKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1296FA2B2CF84100A846DA /* Debug */,
+				FA1296FB2B2CF84100A846DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1296782B2CF83F00A846DA /* Project object */;
+}
