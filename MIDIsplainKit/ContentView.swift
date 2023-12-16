@@ -7,8 +7,11 @@
 
 import AudioToolbox
 import SwiftUI
+import MIDIKit
 
 struct ContentView: View {
+    @EnvironmentObject var midiManager: ObservableMIDIManager
+    @EnvironmentObject var midiHelper: MIDIHelper
     @ObservedObject var hostModel: AudioUnitHostModel
     var margin = 10.0
     var doubleMargin: Double {
@@ -16,6 +19,20 @@ struct ContentView: View {
     }
     
     var body: some View {
+        VStack(alignment: .center, spacing: 20) {
+            Text(
+                """
+                This example creates a virtual MIDI input port named "\(midiHelper.virtualInputName)".
+                
+                Received MIDI events are logged to the console, filtering out Active Sensing and Clock events.
+                
+                Event values are logged verbosely for purposes of this example.
+                """
+            )
+            .multilineTextAlignment(.center)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+        .padding()
         VStack() {
             Text("\(hostModel.viewModel.title )")
                 .textSelection(.enabled)

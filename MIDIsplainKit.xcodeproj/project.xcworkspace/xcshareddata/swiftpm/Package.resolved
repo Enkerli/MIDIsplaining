@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "midikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/MIDIKit.git",
+      "state" : {
+        "revision" : "73b47793dda29886c44242f6edb9640086ff0fa7",
+        "version" : "0.9.4"
+      }
+    },
+    {
+      "identity" : "swiftradix",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/SwiftRadix.git",
+      "state" : {
+        "revision" : "a52c37a4c213403f7377ae77b4c68451bcab8330",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "timecodekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/TimecodeKit",
+      "state" : {
+        "revision" : "06d243df923928792614b2f23616270b71c5a6f0",
+        "version" : "2.0.8"
+      }
+    }
+  ],
+  "version" : 2
+}
